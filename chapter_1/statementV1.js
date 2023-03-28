@@ -1,7 +1,8 @@
 import {invoiceData} from './invoices.js';
 import {playsData} from './plays.js';
 
-function statement(invoice, plays) {
+// 最初版
+function statementV1(invoice, plays) {
     let totalAmount = 0;
     let volumeCredits = 0;
     let result = `Statement for ${invoice.customer}\n`;
@@ -45,12 +46,4 @@ function statement(invoice, plays) {
     return result;
 }
 
-console.log(statement(invoiceData, playsData));
-
-// 输出结果
-// Statement for BigCo
-//	 Halmet: $650.00 (55 seats)
-//	 As You Like It: $580.00 (35 seats)
-//	 Othello: $500.00 (40 seats)
-// Amount owed is $1,730.00
-// You earned 47 credits
+console.log(statementV1(invoiceData, playsData));
