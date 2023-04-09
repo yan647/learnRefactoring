@@ -38,7 +38,7 @@ function statementV1(invoice, plays) {
         // add extra credit for every ten comedy attendees
         if ('comedy' === play.type) volumeCredits += Math.floor(perf.audience / 5);
         // print line for this order
-        result += `	${play.name}: ${format(thisAmount / 100)(${perf.audience} seats)}`;
+        result += `	${play.name}: ${format(thisAmount / 100)(${perf.audience})} seats\n`;
         totalAmount += thisAmount;
     }
     result += `Amount owed is ${format(totalAmount / 100)}\n}`
