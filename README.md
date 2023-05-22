@@ -2,7 +2,7 @@
 学习《重构：改善既有代码的设计（第2版）》
 
 ### 如何执行文件夹中的例子
-node chapter_1/statement.js 
+node chapter_1/statementV1.js 
 <br>
 `TODO` 还没实现
 
